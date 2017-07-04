@@ -57,9 +57,9 @@ namespace SKProCH__Installer_1._
 
             Console.WriteLine("Помещение в автозагрузку...");
 
-            RegistryKey reg;
-            reg = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run\\");
-            reg.SetValue(name, save_path + name);
+            RegistryKey reg;                                                                                // Этот код отвечает 
+            reg = Registry.CurrentUser.CreateSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Run\\"); // за автозагрузку 
+            reg.SetValue(name, save_path + name);                                                           // приложения лаунчера
 
             Console.WriteLine("Установка завершена. Сейчас вы должны подготовить рабочую папку Minecraft'a.");
             Console.WriteLine("Нажмите любую клавишу и в браузере откроется инструкция...");

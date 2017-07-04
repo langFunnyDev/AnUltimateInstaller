@@ -14,9 +14,7 @@ namespace SKProCH__Installer_1._
             string save_path = @"C:\Program Files\SKProCH Updater\";
             string appdata_path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             string appdata_launcher_path = appdata_path + @"\scproch_updater\";
-
-            Console.WriteLine(appdata_launcher_path + appdata_path);
-
+                       
             Console.CursorVisible = false;
 
             Console.WriteLine("Программа для автоматического обновления сейчас будет установлена...");
